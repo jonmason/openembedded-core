@@ -1,4 +1,5 @@
 DEFAULTTUNE ?= "aarch64"
+BASE_LIB ?= "lib64"
 
 require conf/machine/include/arm/arch-armv7ve.inc
 
@@ -14,8 +15,6 @@ TUNE_FEATURES_tune-aarch64 = "aarch64"
 TUNE_FEATURES_tune-aarch64_be = "${TUNE_FEATURES_tune-aarch64} bigendian"
 TUNE_PKGARCH_64_tune-aarch64 = "aarch64"
 TUNE_PKGARCH_64_tune-aarch64_be = "aarch64_be"
-BASE_LIB_tune-aarch64 = "lib64"
-BASE_LIB_tune-aarch64_be = "lib64"
 
 PACKAGE_EXTRA_ARCHS_tune-aarch64 = "aarch64"
 PACKAGE_EXTRA_ARCHS_tune-aarch64_be = "aarch64_be"
